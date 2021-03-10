@@ -26,8 +26,9 @@ if($action !== '') {
             'mess' => 'Успешно добавлено'
         ]);
     }
-} else
+} else {
     echo json_encode([
         'type' => 'error',
         'mess' => 'Указаны не все необходимые данные'
     ]);
+}
